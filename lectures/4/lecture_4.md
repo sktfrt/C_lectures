@@ -2,7 +2,7 @@ libc.so - стандартная библиотека
 
 cppreferemce.com - справочник
 
-##stdio.h
+## stdio.h
 
 ```
 FILE* f1 = fopen("text.txt", mode); //файл на диске
@@ -14,7 +14,7 @@ mode r/w/a: read, write, append
 
 ```
 FILE* fin = fopen("in.txt", "r");
-FILE fout = fopen("out.txt", "w");
+FILE* fout = fopen("out.txt", "w");
 fscanf(fin, "%d %f", &a, &b);
 fprintf(fout, "%d %f", a, b);
 ```
@@ -26,7 +26,8 @@ sprintf(s2, "%d %d", a, b, c); //лучше не ползьваться
 snprintf(...) // вместо нее
 ```
 
-Так же есть
+### Так же есть
+
 fread
 fwrite
 fseek
