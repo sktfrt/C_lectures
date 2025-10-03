@@ -12,7 +12,7 @@ foo("Hello") - нельзя
 r-value --> a = *, * = a
 l-value --> * = a
 
-const char* a -еслиперед ним ничего нет то фикс после 
+const char* a -если перед ним ничего нет то фикс после 
 char const* b - фиксирует предыдущий
 char * const c - 
 
@@ -53,10 +53,10 @@ FILE* fin = fopen("tin.txt", r/w/a);
 if (fin == NULL){};
 ```
 
-fscanf
-fprintf
-fgets
-fput
+* fscanf
+* fprintf
+* fgets
+* fput
 ...
 
 10 в файле, то
@@ -65,7 +65,7 @@ fput
 .txt .c .h - текстовые
 .png .elf .img - бинарные
 
-длябинарных:
+для бинарных:
 ```
 FILE* f_bmp = ("*.txt");
 if (f_bmp == NULL) {};
@@ -74,15 +74,16 @@ if (f_bmp == NULL) {};
 int array[100];
 
 fread(array, sizeof(array), 100, f_bmp)
+```
 
-feof
-ferror
-fflush
+* feof
+* ferror
+* fflush
 
-fseek
-fseeg
+* fseek
+* fseeg
 
-как правильно читать файлики:
+### как правильно читать файлики:
 ```
 while (!feof(f_bmp)){
     fread(..., f_bmp)

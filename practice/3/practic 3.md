@@ -1,8 +1,11 @@
-Возможные ошибки:
+## Возможные ошибки:
+```
 int *p = NULL
 *p = 1
 //signitation fault
------
+```
+
+```
 char *p = NULL
 {
 char c = 2;
@@ -11,21 +14,27 @@ p = &c;
 //отдельный стэк ^
 *p = 4
 //signitation fault
------
+``` 
+
+```
 char *p= malloc(n);
 *p = 100;
 free(p);
 *p = 101;
 //signitation fault
+```
 ------------------------
 после каждого malloc нужно делать проверку
+```
 if (p == NULL){...}
     exit 1;
+```
 
-#pragma once - всегда
+**#pragma once - всегда**
 
-Структуры:
+## Структуры:
 
+```
 struct{
     int x;
     char *p;
@@ -33,7 +42,8 @@ struct{
 
 m = struct .. //на стеке
 m = (struct*)malloc(sizeof(...)) // на куче
-
+```
+```
 typedef (struct{
     int x;
     int *p;
@@ -62,14 +72,17 @@ struct Node{
 struct list{
     Node* heads;
 }
+```
 
 1) по индексу
 2) func add (int v){
     next = malloc(Node);
 }
 
-//инклюзивные(?)списки
+## интрузивные списки
+```
 intr_node{
     intr next;
          prev;
 }
+```
