@@ -7,3 +7,4 @@
 ## Лекции
 - [3 лекция](lectures/3/a.md)
 - [4 лекция](lectures/4/lecture_4.md)
+- [5 лекция](lectures/5/lecture_5.md)
