@@ -3,6 +3,7 @@
 ## Практики
 - [3 практика](practice/3/practic%203.md)
 - [4 практика](practice/4/practice4.md)
+- [5 практика](practice/5/practice_5.md)
 
 ## Лекции
 - [3 лекция](lectures/3/a.md)
